@@ -40,7 +40,8 @@ type BaseHeuristic struct {
 // This is a base type that's inherited by all hardcoded
 // heuristic implementations
 func NewBaseHeuristic(inType core.RegisterType,
-	opts ...BaseHeuristicOpt) Heuristic {
+	opts ...BaseHeuristicOpt,
+) Heuristic {
 	bi := &BaseHeuristic{
 		inType: inType,
 	}
